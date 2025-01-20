@@ -1,0 +1,31 @@
+.container9 {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title9 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(143, 20, 20);
+    margin-left: 0%;
+  }
+  
+  .paragraph9 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .image-container9 {
+    width: 100%;
+  }
+  
+  .full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

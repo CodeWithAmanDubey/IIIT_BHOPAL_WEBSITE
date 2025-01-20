@@ -1,0 +1,266 @@
+.text-box {
+    width: 100%; /* Full width of its container */
+    height: 30px; /* Set the height */
+    background-color: rgb(241, 243, 244); /* Background color */
+    display: flex;
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    font-size: 20px; /* Font size */
+     /* Border */
+    color: rgb(182, 5, 5);
+    margin-bottom: 20px;
+  }
+  .image-pro {
+    display: flex;
+    width: 100%; /* Full width */
+    height: 55px; /* Set a height for the container */
+    overflow: hidden; /* Hide anything outside the container */
+    position: relative;
+    margin-bottom: 20px;
+   
+    animation: moveLeft 10s linear infinite;
+    background-color: rgb(224, 221, 221);
+    /* Apply animation to the entire container */
+  }                         
+  
+  .image-pro img {
+    width: 150px; /* Set width of each image */
+    height: 45px; /* Set height of each image */
+    object-fit: cover; /* Ensures images fit in the defined size */
+    margin: 0 5px; /* Space between images */
+    background-color: white;
+   
+  }
+  
+  /* Keyframe animation to move images from right to left */
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+  
+
+  .cont {
+    display: flex;
+    justify-content: space-between; /* Space between each item */
+    align-items: center; /* Center items vertically */
+    height: 200px; /* Full viewport height */
+    padding: 20px;
+   
+    gap: 15px;
+  }
+  
+  .itm {
+    display: flex;
+    flex-direction: column; /* Align items vertically within each item */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
+    background-color: lightblue;
+    width: 100%; /* Each item div takes the full width */
+    max-width: 23%; /* Limit the max-width for better spacing */
+    height: 200px;
+    justify-content: center;
+    border-radius: 8px; 
+  }
+  
+  .icn {
+    margin-bottom: 10px; /* Space between the icon and text */
+  }
+  
+  .txt {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .prop {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 50px; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    position: absolute;
+  }
+  
+  .left {
+    left: 25%; /* Position the first item at 25% from the left */
+  }
+  
+  .right {
+    right: 25%; /* Position the second item at 25% from the right */
+  }
+  
+  .iconss {
+    margin-right: 10px; /* Space between icon and text */
+    color: #950303;
+  }
+  
+  .textss {
+    font-size: 16px;
+    color: #950303;
+  }
+
+  .boxing {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Space out the images vertically */
+    align-items: center;
+    padding: 20px 0;
+    /* border: 1px solid black; */
+  }
+  
+  .image-containerss {
+    position: relative;
+    width: 200px; /* Width of the image */
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide anything outside the container */
+  }
+  
+  .image-containerss.leftss {
+    position: absolute;
+    left: 25%; /* Position 25% from the left */
+    
+  }
+  
+  .image-containerss.rightss {
+    position: absolute;
+    right: 25%; /* Position 25% from the right */
+    top: 50%; /* Position below the first image */
+    transform: translateY(-50%);
+  }
+  
+  .imagewa {
+    width: 150%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the container */
+    transition: 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .iconwa {
+    position: absolute;
+    display: none; /* Initially hidden */
+    color: white; /* Icon color */
+    transition: 0.3s ease-in-out;
+  }
+  
+  .image-containerss:hover .imagewa {
+    filter: brightness(50%); /* Darkens the image on hover */
+  }
+  
+  .image-containerss:hover .iconwa {
+    display: block; /* Shows the icon on hover */
+  }
+
+  .vertical-line {
+    position: absolute;
+    width: 2px; /* Thickness of the line */
+    height: 100%; /* Full height of the container */
+    background-color: #333; /* Line color */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+  
+
+
+  /* Parent Container */
+.parent-contain {
+    display: flex;
+    flex-direction: row; /* Arrange children horizontally */
+    align-items: flex-start; /* Align items vertically at the top */
+    justify-content: space-between; /* Distribute child divs evenly */
+    gap: 20px; /* Add space between child divs */
+    width: 100%;
+    height:50vh;
+    padding: 20px;
+    background-color: rgb(234, 90, 90); /* Light background */
+    margin-bottom: 6px;
+  }
+  
+  /* Child Div */
+  .child-divi {
+    display: flex;
+  flex-direction: column; /* Align content vertically */
+  align-items: center; /* Center-align the content */
+  width: 20%; /* Each child takes 20% of the parent's width */
+  background-color: rgb(234, 90, 90); /* White background for contrast */
+  padding: 20px;
+  /* Border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align content */
+  height: 80%;
+  }
+  
+  /* Heading Styles */
+  .child-divi h2 {
+    margin-bottom: 10px; /* Space below the heading */
+    color: white; /* Darker heading color */
+  }
+  
+  /* Paragraph Styles */
+  .child-divi p {
+    margin: 5px 0; /* Space between paragraphs */
+    color: white; /* Slightly lighter text color */
+    left: 0;
+  }
+  
+  /* Icons Row */
+  .icons-rowa {
+    display: flex;
+    justify-content: center; /* Center-align the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 15px; /* Space above the icons row */
+  }
+  
+  .icons-rowa svg {
+    color: white; /* Default icon color */
+    transition: 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .icons-rowa svg:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  
+  .part {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    background-color:rgb(234, 90, 90); /* Optional background for visibility */
+  }
+  
+  /* Shared styles for child divs */
+  .childo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the divs */
+    padding: 10px;
+    background-color:rgb(234, 90, 90); /* Optional background for visibility */
+    text-align: center;
+   color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left child, 25% from the left */
+  .left-childo {
+    left: 25%;
+  }
+  
+  /* Right child, 25% from the right */
+  .right-childo {
+    right: 25%;
+  }

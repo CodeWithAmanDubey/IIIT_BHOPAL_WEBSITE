@@ -29,13 +29,13 @@ const Navbar = () => {
         <div></div>
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <li><a href="#">Admission</a></li>
-        <li><a href="#">pgportal.gov.in</a></li>
-        <li><a href="#">ERP login</a></li>
-        <li><a href="#">Placement</a></li>
-        <li><a href="#">Notice</a></li>
-        <li><a href="#">RTIP2R conference 2024</a></li>
-        <li><a href="#">Tender</a></li>
+        <li><a href="/admission">Admission</a></li>
+        <li><a href="https://pgportal.gov.in" target="_blank" rel="noopener noreferrer">pgportal.gov.in</a></li>
+        <li><a href="/erp-login">ERP login</a></li>
+        <li><a href="/placement">Placement</a></li>
+        <li><a href="/notice">Notice</a></li>
+        <li><a href="/rtip2r-conference-2024">RTIP2R conference 2024</a></li>
+        <li><a href="/tender">Tender</a></li>
       </ul>
       <div className="social-media">
         <span>Follow Us:</span>
